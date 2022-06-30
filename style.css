@@ -1,0 +1,127 @@
+:root {
+  --color-red: hsl(0, 78%, 62%);
+  --color-cyan: hsl(180, 62%, 55%);
+  --color-orange: hsl(34, 97%, 64%);
+  --color-blue: hsl(212, 86%, 64%);
+
+  --color-dark-blue: hsl(234, 12%, 34%);
+  --color-grayish-blue: hsl(229, 6%, 66%);
+  --color-light-gray: hsl(0, 0%, 98%);
+
+  --font: "Poppins", sans-serif;
+  --fw-light: 200;
+  --fw-regular: 400;
+  --fw-bold: 600;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  font-family: var(--font);
+  font-size: 1.5rem;
+  background-color: var(--color-light-gray);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: min(90%, 85vw);
+}
+
+/*---------- HEADER ----------*/
+header {
+  display: flex;
+  flex-direction: column;
+  max-width: 54rem;
+  text-align: center;
+}
+.heading-h2 {
+  display: inline-block;
+  font-size: 3.2rem;
+  font-weight: var(--fw-light);
+  color: var(--color-dark-blue);
+}
+.heading-h1 {
+  display: inline-block;
+  font-size: 3.6rem;
+  font-weight: var(--fw-bold);
+}
+
+header p {
+  display: inline-block;
+  color: var(--color-grayish-blue);
+  margin-top: 1.3rem;
+}
+
+/*---------- CARD ----------*/
+.cards {
+  display: flex;
+  gap: 3rem;
+}
+
+.card {
+  position: relative;
+  width: 35rem;
+  height: 25rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 3px 8px 15px hsl(229, 6%, 80%);
+  padding: 3.2rem;
+}
+
+.card:nth-child(1) {
+  border-top: 4px solid var(--color-cyan);
+}
+.card:nth-child(2) {
+  border-top: 4px solid var(--color-red);
+}
+.card:nth-child(3) {
+  border-top: 4px solid var(--color-orange);
+}
+.card:nth-child(4) {
+  border-top: 4px solid var(--color-blue);
+}
+
+.card img {
+  width: 6.4rem;
+  height: 6.4rem;
+  position: absolute;
+  right: 3.2rem;
+  bottom: 3.2rem;
+}
+
+.heading-h5 {
+  font-size: 2rem;
+  font-weight: var(--fw-bold);
+}
+
+.card__text {
+  font-size: 1.3rem;
+  color: var(--color-grayish-blue);
+  line-height: 1.6;
+}
+
+/*---------- MEDIA QUERY ----------*/
+
+/*---------- FOOTER ----------*/
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+}
+.attribution a {
+  color: var(--color-orange);
+}
