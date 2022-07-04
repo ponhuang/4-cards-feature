@@ -83,7 +83,8 @@ header p {
 
 .card {
   position: relative;
-  width: 28rem;
+  width: 100%;
+  max-width: 28rem;
   height: 18rem;
   background-color: #fff;
   border-radius: 8px;
@@ -137,7 +138,7 @@ header p {
   }
 
   .card {
-    width: 35rem;
+    /* width: 35rem; */
     height: 25 rem;
     padding: 2.8rem;
   }
